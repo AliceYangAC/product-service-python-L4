@@ -7,7 +7,6 @@ from azure.storage.blob import BlobServiceClient
 
 load_dotenv()
 
-
 app = Flask(__name__)
 
 CORS(app)
