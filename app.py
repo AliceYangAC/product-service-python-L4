@@ -23,14 +23,15 @@ def seed_data():
         # Generated products with AI with images hosted in Azure Blob Storage
         # store-front hits product-service's endpoint @ port 3002 to get the products
         # located at the provided image path in Blob Storage
-        initial_products = [
+        [
             {
                 "id": 1,
                 "name": "UltraSlim X1 Laptop",
                 "price": 1299.99,
                 "description": "Experience peak performance with the UltraSlim X1. Featuring a 4K InfinityEdge display, i9 processor, and all-day battery life for professionals on the go.",
                 "image": "/images/laptop_x1.jpg",
-                "category": "Computers & Tablets"
+                "category": "Computers & Tablets",
+                "brand": "Apex"
             },
             {
                 "id": 2,
@@ -38,7 +39,8 @@ def seed_data():
                 "price": 349.99,
                 "description": "Immerse yourself in music with industry-leading noise cancellation. The NoiseGuard Pro offers 30 hours of listening time and plush ear cushions for comfort.",
                 "image": "/images/headphones_pro.jpg",
-                "category": "Audio"
+                "category": "Audio",
+                "brand": "Aura"
             },
             {
                 "id": 3,
@@ -46,15 +48,17 @@ def seed_data():
                 "price": 499.99,
                 "description": "See every detail with the Visionary 27-inch 4K monitor. Perfect for designers and gamers, featuring HDR support and a 144Hz refresh rate.",
                 "image": "/images/monitor_4k.jpg",
-                "category": "Computer Accessories"
+                "category": "Computer Accessories",
+                "brand": "OptiMax"
             },
             {
                 "id": 4,
                 "name": "GamerZ Console 5",
-                "price": 499.00,
+                "price": 499.99,
                 "description": "Next-gen gaming is here. Play games in stunning 4K at 120fps with ray tracing technology and ultra-fast load times.",
                 "image": "/images/console_5.jpg",
-                "category": "Video Games"
+                "category": "Video Games",
+                "brand": "Nexus"
             },
             {
                 "id": 5,
@@ -62,7 +66,8 @@ def seed_data():
                 "price": 399.99,
                 "description": "Track your fitness, monitor your health, and stay connected without your phone. Features an always-on Retina display and crack-resistant crystal.",
                 "image": "/images/smartwatch_7.jpg",
-                "category": "Wearable Technology"
+                "category": "Wearable Technology",
+                "brand": "Vital"
             },
             {
                 "id": 6,
@@ -70,7 +75,8 @@ def seed_data():
                 "price": 129.99,
                 "description": "Take the party anywhere with the BlueBeat. Waterproof, dustproof, and drop-proof, delivering powerful 360-degree sound.",
                 "image": "/images/speaker_blue.jpg",
-                "category": "Audio"
+                "category": "Audio",
+                "brand": "Roam"
             },
             {
                 "id": 7,
@@ -78,7 +84,8 @@ def seed_data():
                 "price": 599.99,
                 "description": "Power and portability combined. The ProTab Air features the M1 chip, a stunning Liquid Retina display, and compatibility with the smart pencil.",
                 "image": "/images/tablet_air.jpg",
-                "category": "Computers & Tablets"
+                "category": "Computers & Tablets",
+                "brand": "Forge"
             },
             {
                 "id": 8,
@@ -86,7 +93,8 @@ def seed_data():
                 "price": 149.99,
                 "description": "Dominate the competition with the MechKey RGB. Features responsive mechanical switches, customizable macro keys, and vibrant backlighting.",
                 "image": "/images/keyboard_rgb.jpg",
-                "category": "Computer Accessories"
+                "category": "Computer Accessories",
+                "brand": "Zenith"
             },
             {
                 "id": 9,
@@ -94,7 +102,8 @@ def seed_data():
                 "price": 1999.99,
                 "description": "Experience true blacks and rich colors with the CineView OLED. Smart TV capabilities built-in with voice control and AI picture enhancement.",
                 "image": "/images/tv_oled.jpg",
-                "category": "TV & Home Theater"
+                "category": "TV & Home Theater",
+                "brand": "Luminos"
             },
             {
                 "id": 10,
@@ -102,7 +111,8 @@ def seed_data():
                 "price": 159.99,
                 "description": "Transfer files in seconds with the Bolt SSD. Rugged design, USB-C connectivity, and read speeds up to 1050MB/s.",
                 "image": "/images/ssd_bolt.jpg",
-                "category": "Computer Accessories"
+                "category": "Computer Accessories",
+                "brand": "Velocity"
             }
         ]
         collection.insert_many(initial_products)
