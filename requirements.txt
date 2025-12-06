@@ -1,6 +1,7 @@
 flask
 python-dotenv
 flask-cors
-# For MongoDB connection & getting rid of hardcoded product data
 pymongo
 azure-storage-blob
+azure-cosmos
+azure-identity
